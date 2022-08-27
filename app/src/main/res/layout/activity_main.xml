@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<LinearLayout tools:context="com.example.hangman.MainActivity"
+    android:orientation="horizontal"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <fragment android:layout_height="match_parent"
+        android:layout_width="0dp"
+        tools:layout="@layout/fragment_game_control"
+        android:layout_weight="1"
+        android:name="com.example.hangman.GameControlFragment"
+        android:id="@+id/gameControl"/>
+
+
+    <LinearLayout android:orientation="vertical"
+        android:layout_height="match_parent"
+        android:layout_width="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout android:id="@+id/game_state"
+            android:orientation="vertical"
+            android:layout_height="0dp"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:background="@color/game_state_background"/>
+        <LinearLayout android:id="@+id/game_result"
+            android:orientation="vertical"
+            android:layout_height="0dp"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:background="@color/game_result_background"/>
+
+    </LinearLayout>
+
+</LinearLayout>
+
+
+
+<!--    Version 0 xml:-->
+<!--<?xml version="1.0" encoding="UTF-8"?>-->
+
+<!--<LinearLayout tools:context="com.example.hangman.MainActivity"-->
+<!--    android:orientation="horizontal"-->
+<!--    android:layout_height="match_parent"-->
+<!--    android:layout_width="match_parent"-->
+<!--    xmlns:tools="http://schemas.android.com/tools"-->
+<!--    xmlns:android="http://schemas.android.com/apk/res/android">-->
+
+<!--    <fragment android:layout_height="match_parent"-->
+<!--        android:layout_width="0dp" tools:layout="@layout/fragment_game_control"-->
+<!--        android:layout_weight="1"-->
+<!--        android:name="com.example.hangman.GameControlFragment"-->
+<!--        android:id="@+id/gameControl"/>-->
+
+
+<!--    <LinearLayout android:orientation="vertical" android:layout_height="match_parent" android:layout_width="0dp" android:layout_weight="1">-->
+
+<!--        <LinearLayout android:orientation="vertical"
+                android:layout_height="0dp"
+                android:layout_width="match_parent"
+                android:layout_weight="1"-->
+<!--            android:id="@+id/game_state"-->
+<!--            android:background="@color/game_state_background"/>-->
+
+<!--        <LinearLayout-->
+<!--            android:orientation="vertical"-->
+<!--            android:layout_height="0dp"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_weight="1"-->
+<!--            android:id="@+id/game_result"-->
+<!--            android:background="@color/game_result_background"-->
+<!--            android:gravity="center"/>-->
+
+<!--    </LinearLayout>-->
+
+<!--</LinearLayout>-->
+
+
+    <!--<?xml version="1.0" encoding="utf-8"?>-->
+<!--<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--    xmlns:app="http://schemas.android.com/apk/res-auto"-->
+<!--    xmlns:tools="http://schemas.android.com/tools"-->
+<!--    android:layout_width="match_parent"-->
+<!--    android:layout_height="match_parent"-->
+<!--    tools:context=".MainActivity">-->
+
+<!--    <TextView-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="Hello World!"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintLeft_toLeftOf="parent"-->
+<!--        app:layout_constraintRight_toRightOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent" />-->
+
+<!--</androidx.constraintlayout.widget.ConstraintLayout>-->
